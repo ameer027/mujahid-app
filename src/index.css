@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #FFFFFF !important;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 80px 40px 0px 40px;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #E6E6E6;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: left;
+  text-decoration: underline; 
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: left;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  color: #acacac;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #acacac;
+}
+
+.btn-special {
+  background: rgb(251,107,20);
+background: linear-gradient(90deg, rgba(251,107,20,1) 0%, rgba(255,214,2,1) 100%);
+  font-weight: 400;
+  color:#ffffff;
+      text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    /* background-color: transparent; */
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 2.1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.already-registered {
+
+  color: #acacac;
+  text-align: center;
+}
+
+/* .form-control::-webkit-input-placeholder::after {
+  color: red;
+  text-align: right;
+  font-size: 50px;
+  content: "*";
+} */
+
+.asterick{
+  font-size: medium;
+  color: red;
+  float: right;
+}
+
+.skip-class{
+
+  text-decoration: underline;
+  font-size: medium;
+  text-align: center;
+  padding-top: 5px;
+}
