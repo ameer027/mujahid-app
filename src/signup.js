@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 class SignUp extends Component {
     render() {
         return (
+            <div className="auth-wrapper">
+            <div className="auth-inner">
             <form>
                 <h3>Sign Up</h3>
 
@@ -37,6 +39,8 @@ class SignUp extends Component {
                     Have an account <a href="/sign-in">Sign in?</a>
                 </p>
             </form>
+            </div>
+            </div>
         );
     }
 }

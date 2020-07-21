@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Login from './login';
 import SignUp from './signup';
 import SignUp3 from './signup3'
+import PaymentMethod1 from './paymentmethod1'
+import EditProfile from './editprofile'
 
 function App() {
   return (<Router>
@@ -25,21 +27,26 @@ function App() {
               <li>
               <Link className="nav-link" to={"/sign-up3"}>Sign up3</Link>
               </li>
+              <li>
+              <Link className="nav-link" to={"/paymentmethod1"}>Payment Method</Link>
+              </li>
+              <li>
+              <Link className="nav-link" to={"/editprofile"}>Edit Profile</Link>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div className="auth-wrapper">
-        <div className="auth-inner">
-          <Switch>
-            <Route exact path='/' component={Login} />
-            <Route path="/sign-in" component={Login} />
-            <Route path="/sign-up" component={SignUp} />
-            <Route path="/sign-up3" component={SignUp3} />
-          </Switch>
-        </div>
-      </div>
+      <Switch>
+      
+      <Route exact path='/' component={Login} />
+      <Route path="/sign-in" component={Login} />
+      <Route path="/sign-up" component={SignUp} />
+      <Route path="/sign-up3" component={SignUp3} />
+      <Route path="/paymentmethod1" component={PaymentMethod1} />
+      <Route path="/editprofile" component={EditProfile} />
+      </Switch>
     </div></Router>
   );
 }

@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 class SignUp3 extends Component {
     render() {
         return (
+            <div className="auth-wrapper">
+            <div className="auth-inner">
             <form>
                 <h3>Tell us more</h3>
 
@@ -42,6 +44,8 @@ class SignUp3 extends Component {
                     Skip
                 </p>
             </form>
+            </div>
+            </div>
         );
     }
 }
